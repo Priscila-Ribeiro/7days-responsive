@@ -1,0 +1,88 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root {
+ --fundo: linear-gradient(165.96deg, #f8f4ff, #eff0f4);
+ --branco: #fff;
+ --preto-texto: #333333;
+ --texto-nome: #464646;
+ --texto-sem-realce: #a3a3a3;
+ --border1: #ececec;
+ --icone-azul: #4894ff;
+ --circulo: #f6f6f6;
+ --botao-laranja: #ffb050;
+ --sombra-laranja: box-shadow: 0px 4px 16px 0px #FFB05029;
+ --sombra-azul: box-shadow: 0px 4px 16px 0px #4894FF29;
+ --sombra-menu-rodape:box-shadow: 0px -4px 8px 0px #0000000F 6%;
+
+}
+
+html {
+ font-family: 'MontSerrat';
+ /* overflow: hidden; */ 
+}
+
+body {
+ position: relative;
+ background-image: var(--fundo);
+}
+
+main {
+ width: 360px;
+ height: 2332px;
+ top: -1413px;
+ left: -901px;
+}
+
+section {
+ margin: 8px 16px;
+}
+
+.menu-rodape{
+ position: absolute;
+ display: flex;
+ align-items: center;
+justify-content: space-around;
+ background-color: var(--branco);
+box-shadow: var(--sombra-menu-rodape);
+ width: 360px;
+height: 58px;
+top: 662px;
+border-radius: 12px 12px 0px 0px;
+
+& .item-rodape{
+ color: var(--texto-nome);
+ display: flex;
+ flex-flow: column;
+ align-items: center;
+ opacity: 30%;
+
+} 
+
+& .legenda-rodape{
+ color: var(--texto-nome);
+ text-align: center;
+ list-style: none;
+ text-decoration: none;
+ font-size: 12px;
+ font-weight: 400;
+ line-height: 19.2px;
+}
+
+ & .ativo {
+color: var(--icone-azul);
+opacity: 100%;
+}
+
+& .icones-rodape{
+ opacity: 0.3px;
+ width: 24px;
+ height: 20px;
+ top: 671px;
+left: 122px;
+
+}
+}
